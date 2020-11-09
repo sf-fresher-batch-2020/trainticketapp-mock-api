@@ -1,16 +1,23 @@
 {
     "users": [
-
-    ],
-    "accounts": [
-
-    ],
-    "transactions": [
-
-    ],
-    "payees":[
-        
+        {
+          "id":1,
+          "name": "sai",
+          "email": "sai@gmail.com",
+          "dob": "27.04.2019",
+          "password":"123456",
+          "gender":"female",
+          "role": "user"
+        },
+        {
+            "id": 2,
+            "name": "abc",
+            "email": "abc@gmail.com",
+            "dob": "2.04.2000",
+            "password":"12345678",
+            "gender":"male",
+            "role": "admin"  
+        }
     ]
-    
-
+ 
 }

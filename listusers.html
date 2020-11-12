@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Frontend</h3>
+    <h3>List All Users</h3>
+    <div id="list-users">
+    </div>
+    <script>
+        let serverUrl = "http://localhost:5000/api";
+        // Get all Users
+        let apiUrl  = serverUrl + "/users";
+        console.log(apiUrl);
+        // Call backend api
+        fetch(apiUrl).then(res=> res.json()).then(res=>{
+            console.log(res);
+            document.querySelector("#list-users").innerHTML = JSON.stringify(res);
+        });
+    </script>
+</body>
+
+</html>
